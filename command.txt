@@ -1,0 +1,50 @@
+cd .yml file
+
+vim docker-compose.yml
+
+docker-compose up db
+
+docker ps
+
+docker network create local_network
+
+docker-compose up db 
+
+docker ps -a
+
+docker start ...
+
+docker ps
+
+docker exec -it postgres bash
+
+	psql -U postgres
+
+	create database testdb;
+
+	\c testdb 
+
+	\dt
+
+	\d relation
+
+
+//import, export csv file
+
+root: cd /dev/csv
+	nano import.csv
+	readlink -f import.cv
+	\copy nhanvien from '/dev/csv/import.csv' delimiter ',' csv header;
+
+	\copy (select * from nhanvien where age > 21) to '/dev/csv/output.csv' delimiter ',' csv header;
+
+//procedure, function
+	\c salesystem
+
+	\i '/dev/sql/SaleDB.sql'
+
+		
+
+
+
+
